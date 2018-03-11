@@ -1,0 +1,154 @@
+@font-face{
+    font-family:Aniron;
+    src:url("fonts/aniron.ttf");
+}
+
+@font-face{
+    font-family:Tengwar;
+    src:url("fonts/symboles.ttf");
+}
+
+body{
+    font-family:aniron;
+    min-height:4000px;
+}
+
+.nav-link{
+    color:white !important;
+    text-decoration: none;
+    font-family:Aniron;
+    font-size:11px;
+}
+
+.nav-link:hover{
+    text-decoration:underline;
+}
+
+.bonjour{
+    background-color:black;
+    opacity:0.8;
+}
+
+.symboletitle{
+    color:orange;
+    font-size:17px;
+    display:inline-block;
+    font-family:Tengwar;
+}
+
+.title{
+    color:black;
+    font-size:17px;
+    display:inline-block;
+    padding-top:40px;
+}
+
+.contwanted{
+    background-image:url(images/background.png);
+}
+
+.tabpills{
+    border:1px solid;
+}
+
+.txtpills{
+    border:1px solid;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: center;
+    padding-bottom:20px;
+}
+
+.nav-pills li {
+    margin-right:15px;
+    margin-left:15px;
+    font-size:12px;
+    cursor:pointer;
+}
+
+.nav-pills li:hover{
+    color:orange;
+    text-decoration: underline;
+}
+
+.black{
+    background-color:black;
+    padding:4px;
+}
+
+.hello{
+    margin-left:0;
+    padding:0;
+    width:100%; 
+}
+
+.image:hover ~ .textoverimage {
+    display:none;
+}
+
+.image:hover ~ .textoverimage2 {
+    display:none;
+}
+
+.image:hover ~ .nameoverimage{
+    top:auto;
+    bottom:18%;
+    
+}
+
+.textoverimage{
+    position:absolute;
+    top:15%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0.9;
+    background-color:white;
+    width:80%;
+    padding:5px;
+    border-radius:5px;
+}
+
+.textoverimage2{
+    position:absolute;
+    top:15%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:none;
+    width:80%;
+    color:orange;
+    font-weight:bold;
+    font-size:27px;
+}
+
+.nameoverimage{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-weight:bold;
+}
+
+@media(max-width:1230px){
+    .nav-link{
+        font-size:9px;
+    }
+    .logo{
+        width:150px;
+    }
+    .txtslide{
+        font-size:12px;
+    }
+    .title{
+        font-size:11px;
+    }
+
+}
+
+@media(max-width:1000px){
+    .textoverimage{
+        font-size:11px;
+    }
+}
